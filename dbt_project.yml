@@ -18,8 +18,14 @@ clean-targets:
 
 models:
     dbt_tranning_andela:
-        example:
-            materialized: view
+        marts:
+            core:
+                +materialized: table
+        
+        staging:
+            +materialized: view
+
+
 # my-snowflake-db:
 # target: dev
 # outputs:
