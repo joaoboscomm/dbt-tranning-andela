@@ -1,3 +1,19 @@
+JB Dbt Tranning - Dbt Fundamentals
+
+Lessons:
+
+- Fundamentals :white_check_mark:
+- Setup dbt Cloud :white_check_mark:
+- Models :white_check_mark:
+- Sources :construction:
+- Tests :construction:
+- Documentation :construction:
+- Deployment :construction:
+
+Deadline: 23/01/2022 :soon:
+
+---- DBT Readme ------
+
 Welcome to your new dbt project!
 
 ### Using the starter project
