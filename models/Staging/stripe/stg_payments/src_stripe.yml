@@ -1,0 +1,15 @@
+version: 2
+
+# Defining the source name and parameters
+sources:
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment 
+    #getting source freshness
+        loaded_at_field: _BATCHED_AT
+        freshness:
+          warn_after: {count: 12, period: hour} #Translation: After 12h if the are a _etl_loaded_at greater them 12h old, send a notification
+        #will stop the running instructions 
+          error_after: {count: 24, period: hour} #Translation: if if the are a _etl_loaded_at greater them 24h them will stop the commands.

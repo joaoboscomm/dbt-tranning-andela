@@ -5,7 +5,7 @@ Lessons:
 - Fundamentals :white_check_mark:
 - Setup dbt Cloud :white_check_mark:
 - Models :white_check_mark:
-- Sources :construction:
+- Sources :white_check_mark:
 - Tests :construction:
 - Documentation :construction:
 - Deployment :construction:
@@ -29,3 +29,6 @@ Try running the following commands:
 - Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+### Additional resources
+- yml properties https://docs.getdbt.com/reference/resource-properties/columns
