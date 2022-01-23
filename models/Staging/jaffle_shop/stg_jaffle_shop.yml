@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns: 
+      - name: customer_id
+        #This tests can be tested by using dbt test command. Dbt test run a query to check if the model that you want to run has a null value, for example. If there is, triggers a erro message.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              # here, all values need to be listed exactly like the database. If isnt, will get a erro msg
+              values:
+                - completed
+                - shipped
+                - returned
+                - return_pending
+                - placed
+      
+      #Adding a relationship validation for the customer_id field and relation with customers table
+      - name: customer_id
+        tests:
+          - relationships:
+              #table reference
+              to: ref('stg_customers')
+              #field that you want to create the relationship validation
+              field: customer_id

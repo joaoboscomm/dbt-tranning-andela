@@ -6,11 +6,24 @@ sources:
     database: raw
     schema: jaffle_shop
     tables:
-      - name: customers 
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+            
       - name: orders
-    #getting source freshness
+        columns:
+          - name: id
+            tests:
+              - unique              
+              - not_null
+        #getting source freshness
         loaded_at_field: _etl_loaded_at
         freshness:
           warn_after: {count: 12, period: hour} #Translation: After 12h if the are a _etl_loaded_at greater them 12h old, send a notification
         #will stop the running instructions 
           error_after: {count: 24, period: hour} #Translation: if if the are a _etl_loaded_at greater them 24h them will stop the commands.
+
+# if you want to run a test on a expecific source you can run dbt test --select source:source_name
