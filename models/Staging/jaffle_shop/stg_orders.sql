@@ -6,7 +6,7 @@ with orders as (
         order_date,
         status
 
-    from {{source: ('jaffle_shop','orders')}}
+    from {{ source ('jaffle_shop','orders')}}
     -- substitute raw.jaffle_shop.orders by jaffle_shop source on src_jaffle_shop.yml
 )
 
