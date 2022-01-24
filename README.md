@@ -6,8 +6,8 @@ Lessons:
 - Setup dbt Cloud :white_check_mark:
 - Models :white_check_mark:
 - Sources :white_check_mark:
-- Tests :construction:
-- Documentation :construction:
+- Tests :white_check_mark:
+- Documentation :white_check_mark:
 - Deployment :construction:
 
 Deadline: 23/01/2022 :soon:
@@ -31,4 +31,4 @@ Try running the following commands:
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
 ### Additional resources
-- yml properties https://docs.getdbt.com/reference/resource-properties/columns
+- [yml properties] (https://docs.getdbt.com/reference/resource-properties/columns)

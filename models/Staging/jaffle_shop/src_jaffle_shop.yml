@@ -3,19 +3,24 @@ version: 2
 # Defining the source name and parameters
 sources:
   - name: jaffle_shop
+    description: An clone of a application at a snowflake database
     database: raw
     schema: jaffle_shop
     tables:
       - name: customers
+        description: Raw customer data comming from jaffle shop at snowflake
         columns:
           - name: id
+            description: PK for customers.
             tests:
               - unique
               - not_null
             
       - name: orders
+        description: Raw orders data comming from jaffle shop at snowflake
         columns:
           - name: id
+            description: PK for orders.
             tests:
               - unique              
               - not_null
