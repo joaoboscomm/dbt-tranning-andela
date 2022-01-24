@@ -8,11 +8,11 @@ Lessons:
 - Sources :white_check_mark:
 - Tests :white_check_mark:
 - Documentation :white_check_mark:
-- Deployment :construction:
+- Deployment :white_check_mark:
 
 Deadline: 23/01/2022 :soon:
 
----- DBT Readme ------
+---- DBT Readme ----
 
 Welcome to your new dbt project!
 
@@ -31,4 +31,4 @@ Try running the following commands:
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
 ### Additional resources
-- [yml properties] (https://docs.getdbt.com/reference/resource-properties/columns)
+- [yml properties](https://docs.getdbt.com/reference/resource-properties/columns)
